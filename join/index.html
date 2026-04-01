@@ -250,9 +250,8 @@
 <body>
 
     <div class="top-bar">
-        <div class="logo">
-            <span class="logo-mark"></span>
-            <div class="company-name">Silver Forge Technologies LLC</div>
+        <div class="logo" style="justify-content: center;">
+            <img src="../Silver Forge Logo with name.PNG" alt="Silver Forge Technologies" style="height:40px;max-width:220px;object-fit:contain;">
         </div>
     </div>
 
@@ -312,8 +311,8 @@
 
             errorEl.style.display = 'none';
 
-            // Simulate submission (backend integration point)
-            // TODO: wire to email capture service (Mailchimp, ConvertKit, etc.)
+            // EMAIL_SERVICE_PENDING: wire to Klaviyo — form ID and API key needed from Paul
+            // DELIVERY_PENDING: send Chapter 1 PDF via Klaviyo automated sequence after form submit
             console.log('Email captured:', { name: name || 'Anonymous', email: email });
 
             // Show success state
